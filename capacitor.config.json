@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "MisNotas",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
