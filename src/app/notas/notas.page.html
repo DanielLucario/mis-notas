@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="entradaActual">
+    <ion-card-content>
+      <p id="fechaTexto">{{entradaActual.fechaTexto}}</p>
+      <ion-textarea rows="15" [(ngModel)]="entradaActual.texto"></ion-textarea>
+    </ion-card-content>
+    <ion-button expand="block" (click)="guardar(entradaActual)">Guardar</ion-button>
+  </ion-card>
+</ion-content>

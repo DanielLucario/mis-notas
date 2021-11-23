@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then(m => m.RegistroPageModule)
+  },  {
+    path: 'notas',
+    loadChildren: () => import('./notas/notas.module').then( m => m.NotasPageModule)
   },
+
 ];
 
 @NgModule({
